@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+  <node name="image_converter" pkg="cvbridge_tutorials" type="marker_detection2.py" output="screen" />
+  <node name="cmd_pose" pkg="cvbridge_tutorials" type="teleop2.py" output="screen" />
+  <!-- include file="$(find omo_r1_bringup)/launch/omo_r1_motor.launch">
+    <arg name="set_odom_mode" value="wheel_only"/> -->
+</launch>

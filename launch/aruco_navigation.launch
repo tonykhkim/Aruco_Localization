@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="cvbridge_tutorials" name="marker_detection" type="marker_detection.py" output="screen" />  
+  <node pkg="turtlebot3_teleop" name="movesimplegoal" type="movesimplegoal.py" output="screen" />   
+  <node pkg="cvbridge_tutorials" name="teleop" type="teleop.py" output="screen" />
+</launch>      
